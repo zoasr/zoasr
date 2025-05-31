@@ -22,10 +22,10 @@
 <a href="#" align="left">
 <img src="out/website.svg"  >
 </a>
-<a href="lastfm-viewer.vercel.app" align="center">
+<a href="https://www.linkedin.com/in/zeyad-sherif" align="center">
 <img src="out/linkedin.svg"  >
 </a>
-<a href="lastfm-viewer.vercel.app" align="right">
+<a href="https://github.com/ZOASR" align="right">
 <img src="out/github.svg"  >
 </a>
 </p>
