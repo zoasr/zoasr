@@ -41,11 +41,11 @@ compileFile();
 for await (const event of watcher) {
 	if (
 		event.kind == "modify" &&
-		(event.paths.includes(`${Deno.cwd()}\\./${sassFile}`) ||
-			event.paths.includes(`${Deno.cwd()}\\./${htmlFile}`))
+		(event.paths.includes(`${Deno.cwd()}\\${sassFile}`) ||
+			event.paths.includes(`${Deno.cwd()}\\${htmlFile}`))
 	) {
 		console.log(
-			`%cfile change: %c${event.paths} %cchanged`,
+			`%c[File change]: %c${event.paths[0].split("\\").pop()}%c changed`,
 			`color: yellow; fontweight: bold`,
 			`color: green;text-decoration: underline; fontweight: bold`,
 			`color: #222; fontweight: bold`
@@ -53,4 +53,3 @@ for await (const event of watcher) {
 		compileFile();
 	}
 }
-watcher.close();
