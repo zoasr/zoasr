@@ -23,7 +23,7 @@ const compileFile = async () => {
 		const sassFileText = await Deno.readTextFile(sassFile);
 		const htmlText = await Deno.readTextFile(htmlFile);
 		const indentedCss = compileStyles(sassFileText);
-		const svgText = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="100%">
+		const svgText = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="720px">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
 			<style>
