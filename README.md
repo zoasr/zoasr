@@ -1,44 +1,31 @@
-<div style="display:grid; gap: 1rem">
-
-<picture >
-	<img src="out/header.svg" width="100%" height="100%" align="left">
-</picture>
+<p align="center" vs="100">
+<img src="out/header.svg" width="100%" height="100%" align="left">
+</p>
 
 ---
 
-<picture >
-	<img src="out/projects.svg" width="100%" height="100%" align="left">
-</picture>
+<p align="center">
+<img src="out/projects.svg" width="100%" >
+</p>
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
-	<a href="lastfm-viewer.vercel.app">
-		<picture >
-			<img src="out/@lastfm-viewer.svg"  align="left">
-		</picture>
-	</a>
-</div>
+<p align="center">
+<a href="lastfm-viewer.vercel.app">
+<img src="out/@lastfm-viewer.svg"  align="center" style="margin: 0 auto;">
+</a>
+</p>
 
 ---
 
-<picture >
-	<img src="out/reach-me.svg" width="100%" height="100%" align="left">
-</picture>
+<img src="out/reach-me.svg" width="100%" height="100%" align="center">
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
-	<a href="#">
-		<picture >
-			<img src="out/website.svg"  align="left">
-		</picture>
-	</a>
-	<a href="lastfm-viewer.vercel.app">
-		<picture >
-			<img src="out/linkedin.svg"  align="left">
-		</picture>
-	</a>
-	<a href="lastfm-viewer.vercel.app">
-		<picture >
-			<img src="out/github.svg"  align="left">
-		</picture>
-	</a>
-</div>
-</div>
+<p align="center">
+<a href="#" align="left">
+<img src="out/website.svg"  >
+</a>
+<a href="lastfm-viewer.vercel.app" align="center">
+<img src="out/linkedin.svg"  >
+</a>
+<a href="lastfm-viewer.vercel.app" align="right">
+<img src="out/github.svg"  >
+</a>
+</p>
