@@ -1,4 +1,3 @@
-<picture>
-	<source media="(prefers-color-scheme: dark)" srcset="#">
-	<img src="#" width="100%" height="20" align="left">
+<picture style="width: 100%; height: 100%">
+	<img src="src/out.svg" width="100%" height="100%" align="left">
 </picture>
