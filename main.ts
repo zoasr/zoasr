@@ -17,7 +17,7 @@ const files: fileProps[] = [
 		html: "./src/header.html",
 		out: "./out/header.svg",
 		sass: "./src/header.scss",
-		height: "500px",
+		height: "700px",
 		width: "100%",
 	},
 	{
