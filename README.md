@@ -8,9 +8,12 @@
 	<img src="out/projects.svg" width="100%" height="100%" align="left">
 </picture>
 <p align="center">
-<picture >
-	<img src="out/@lastfm-viewer.svg" align="center">
-</picture>
+<a href="https://lastfm-viewer.vercel.app/">
+	<picture >
+		<img src="out/@lastfm-viewer.svg" align="center">
+	</picture>
+</a>
+	
 </p>
 <picture >
 	<img src="out/separator.svg" width="100%" height="100%" align="left">
