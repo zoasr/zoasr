@@ -92,9 +92,9 @@ main {
 		.link-logo svg {
 			display: block;
 			fill: var(--color-text);
-			path {
-				fill: var(--color-text);
-			}
+			// path {
+			// 	fill: var(--color-text);
+			// }
 		}
 	}
 	.link-icon {
@@ -113,23 +113,27 @@ main {
 
 main > * {
 	--anim-index: 0;
-	--anim-stagger: 0.7s;
-	animation-name: fade-down;
+	--anim-stagger: 0.4s;
+	animation-name: reveal;
 	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 	animation-fill-mode: forwards;
 	animation-delay: calc(var(--anim-stagger, 1s) * var(--anim-index, 0));
 	opacity: 0;
 	transform: translateY(-20px);
+	perspective: 20px;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transform-origin: 0 0 -100px;
 }
 
-@keyframes fade-down {
+@keyframes reveal {
 	0% {
 		opacity: 0;
-		transform: translateY(-20px);
+		transform: rotateY(45deg);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		transform: rotateY(0);
 	}
 }

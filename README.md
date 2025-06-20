@@ -17,10 +17,22 @@
 	<img src="out/projects-light.svg" width="100%" height="100%" align="left">
 </picture>
 <p align="center">
+<a href="https://machlist.vercel.app/">
+	<picture >
+		<source srcset="out/machlist-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/machlist-light.svg" align="center">
+	</picture>
+</a>
 <a href="https://lastfm-viewer.vercel.app/">
 	<picture >
 		<source srcset="out/@lastfm-viewer-dark.svg" media="(prefers-color-scheme: dark)">
 		<img src="out/@lastfm-viewer-light.svg" align="center">
+	</picture>
+</a>
+<a href="https://supa-shop.vercel.app/">
+	<picture >
+		<source srcset="out/supa-shop-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/supa-shop-light.svg" align="center">
 	</picture>
 </a>
 

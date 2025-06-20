@@ -1,0 +1,20 @@
+@use "../preflight/_preflight";
+
+// :root {
+// 	--color-1: #002208;
+// 	--color-2: #004810;
+// 	--color-3: #006e25;
+// 	--color-text: #00ff40;
+// }
+
+main {
+	padding: 0rem;
+	display: block;
+}
+.container {
+	padding: 1rem;
+	border-radius: 5px;
+	// background: linear-gradient(180deg, var(--color-1), var(--color-2))
+	// 	padding-box;
+	--anim-index: 5;
+}

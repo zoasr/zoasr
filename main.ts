@@ -66,6 +66,22 @@ const files: fileProps[] = [
 		height: "50px",
 		width: "200px",
 	},
+	{
+		name: "machlist",
+		html: "./src/machlist.html",
+		out: "./out/machlist.svg",
+		sass: "./src/machlist.scss",
+		height: "100px",
+		width: "200px",
+	},
+	{
+		name: "supa-shop",
+		html: "./src/supa-shop.html",
+		out: "./out/supa-shop.svg",
+		sass: "./src/supa-shop.scss",
+		height: "100px",
+		width: "200px",
+	},
 ];
 const watcher = Deno.watchFs(["./src/", "./preflight/"], {
 	recursive: false,

@@ -3,14 +3,14 @@
 		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
 			<style>
 			
-    :root {
-    	--color-1: #9fa3ec;
-    	--color-2: #9fa3ec;
-    	--color-3: #9fa3ec;
-    	--color-text: #000222;
-    }
+				:root {
+					--color-1: #9fa3ec;
+					--color-2: #9fa3ec;
+					--color-3: #9fa3ec;
+					--color-text: #000222;
+				}
 
-			    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"}ul,li{list-style-type:none}main svg#Layer_2{position:absolute;inset:50% 10% auto 10%;top:50%;translate:0 -50%;z-index:0;opacity:.2;scale:0;animation:scale 1s ease-in-out forwards;animation-delay:2s}@keyframes scale{0%{scale:0}100%{scale:1}}main{padding:1rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;color:var(--color-text)}.cls-1{fill:var(--color-text)}.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;stroke:var(--color-text);animation:pulsate-stroke 5s ease-in-out infinite alternate}@keyframes pulsate-stroke{0%{stroke-width:10px}100%{stroke-width:40px}}.links{display:flex;justify-content:center;gap:1rem}.links .link{display:flex;align-items:center}.links .link a{text-decoration:underline;font-weight:bold;color:var(--color-text)}.links .link .link-logo svg{display:block;fill:var(--color-text)}.links .link .link-logo svg path{fill:var(--color-text)}.links .link-icon{color:var(--color-text);animation:rotate .5s ease-in-out infinite alternate}@keyframes rotate{0%{translate:0 0}100%{translate:10% -10%}}main>*{--anim-index:0;--anim-stagger:.7s;animation-name:fade-down;animation-duration:1s;animation-timing-function:ease-in-out;animation-fill-mode:forwards;animation-delay:calc(var(--anim-stagger, 1s) * var(--anim-index, 0));opacity:0;transform:translateY(-20px)}@keyframes fade-down{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.container{padding:.2rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;--anim-index:7}
+							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"}ul,li{list-style-type:none}main svg#Layer_2{position:absolute;inset:50% 10% auto 10%;top:50%;translate:0 -50%;z-index:0;opacity:.2;scale:0;animation:scale 1s ease-in-out forwards;animation-delay:2s}@keyframes scale{0%{scale:0}100%{scale:1}}main{padding:1rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;color:var(--color-text)}.cls-1{fill:var(--color-text)}.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;stroke:var(--color-text);animation:pulsate-stroke 5s ease-in-out infinite alternate}@keyframes pulsate-stroke{0%{stroke-width:10px}100%{stroke-width:40px}}.links{display:flex;justify-content:center;gap:1rem}.links .link{display:flex;align-items:center}.links .link a{text-decoration:underline;font-weight:bold;color:var(--color-text)}.links .link .link-logo svg{display:block;fill:var(--color-text)}.links .link-icon{color:var(--color-text);animation:rotate .5s ease-in-out infinite alternate}@keyframes rotate{0%{translate:0 0}100%{translate:10% -10%}}main>*{--anim-index:0;--anim-stagger:.4s;animation-name:reveal;animation-duration:1s;animation-timing-function:cubic-bezier(.23, 1, .32, 1);animation-fill-mode:forwards;animation-delay:calc(var(--anim-stagger, 1s) * var(--anim-index, 0));opacity:0;transform:translateY(-20px);perspective:20px;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:0 0 -100px}@keyframes reveal{0%{opacity:0;transform:rotateY(45deg)}100%{opacity:1;transform:rotateY(0)}}.container{padding:.2rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;--anim-index:7}
 			</style>
 			<main class="main">
 	<div class="container">
@@ -30,6 +30,7 @@
 							d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
 							transform="scale(64)"
 							fill="#1B1F23"
+							class="cls-1"
 						/>
 					</svg>
 				</div>
