@@ -1,40 +1,55 @@
+<p align="center" width="100%">
+	<picture>
+		<source srcset="static/logo-dark.svg" media="(prefers-color-scheme: dark)"/>
+		<img src="static/logo.svg" width="20%" height="20%" align="center" />
+	</picture>
+</p>
 <picture >
-	<img src="out/header.svg" width="100%" height="100%" align="left">
+	<source srcset="out/header-dark.svg" media="(prefers-color-scheme: dark)">
+	<img src="out/header-light.svg" width="100%" height="100%" align="left">
 </picture>
 <picture >
-	<img src="out/separator.svg" width="100%" height="100%" align="left">
+	<source srcset="static/separator-dark.svg" media="(prefers-color-scheme: dark)">
+	<img src="static/separator.svg" width="100%" height="100%" align="left">
 </picture>
 <picture >
-	<img src="out/projects.svg" width="100%" height="100%" align="left">
+	<source srcset="out/projects-dark.svg" media="(prefers-color-scheme: dark)">
+	<img src="out/projects-light.svg" width="100%" height="100%" align="left">
 </picture>
 <p align="center">
 <a href="https://lastfm-viewer.vercel.app/">
 	<picture >
-		<img src="out/@lastfm-viewer.svg" align="center">
+		<source srcset="out/@lastfm-viewer-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/@lastfm-viewer-light.svg" align="center">
 	</picture>
 </a>
-	
+
 </p>
 <picture >
-	<img src="out/separator.svg" width="100%" height="100%" align="left">
+	<source srcset="static/separator-dark.svg" media="(prefers-color-scheme: dark)">
+	<img src="static/separator.svg" width="100%" height="100%" align="left">
 </picture>
 <picture >
-	<img src="out/reach-me.svg" width="100%" height="100%" align="left">
+	<source srcset="out/reach-me-dark.svg" media="(prefers-color-scheme: dark)">
+	<img src="out/reach-me-light.svg" width="100%" height="100%" align="left">
 </picture>
 <p align="center">
 <a href="https://zoasr-portfolio.pages.dev/">
 	<picture >
-		<img src="out/website.svg" align="center">
+		<source srcset="out/website-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/website-light.svg" align="center">
 	</picture>
 </a>
 <a href="https://www.linkedin.com/in/zeyad-sherif/">
 	<picture >
-		<img src="out/linkedin.svg" align="center">
+		<source srcset="out/linkedin-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/linkedin-light.svg" align="center">
 	</picture>
 </a>
 <a href="https://github.com/zoasr">
 	<picture >
-		<img src="out/github.svg" align="center">
+		<source srcset="out/github-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/github-light.svg" align="center">
 	</picture>
 </a>
 </p>

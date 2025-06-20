@@ -1,7 +1,5 @@
 import { compileStyles } from "./src/style.ts";
 
-console.clear();
-
 type fileProps = {
 	name: string;
 	html: string;
@@ -41,7 +39,7 @@ const files: fileProps[] = [
 		html: "./src/@lastfm-viewer.html",
 		out: "./out/@lastfm-viewer.svg",
 		sass: "./src/@lastfm-viewer.scss",
-		height: "50px",
+		height: "100px",
 		width: "200px",
 	},
 	{
@@ -69,43 +67,77 @@ const files: fileProps[] = [
 		width: "200px",
 	},
 ];
-const watcher = Deno.watchFs("./src/", {
+const watcher = Deno.watchFs(["./src/", "./preflight/"], {
 	recursive: false,
 });
+
+const returnSvg = (
+	_strings: TemplateStringsArray,
+	...values: [`${number}px` | `${number}%` | "100%" | undefined, ...string[]]
+) => {
+	return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="${values[0]}" height="${values[1]}">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
+			<style>
+			${values[2]}
+			${values[3]}
+			</style>
+			${values[4]}
+		</div>
+	</foreignObject>
+</svg>`;
+};
 
 const compileFile = async (fileProps: fileProps) => {
 	if (fileProps.sass && fileProps.html) {
 		const htmlText = await Deno.readTextFile(fileProps.html);
-		const indentedCss = compileStyles(fileProps.sass);
-		const svgText = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="${fileProps.width}" height="${fileProps.height}">
-	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
-			<style>
+		const { indentedCss, varsLight, varsDark } = compileStyles(
+			fileProps.sass
+		);
+		const svgDark = returnSvg`
+			${fileProps.width}
+			${fileProps.height}
+			${varsDark}
 			${indentedCss}
-			</style>
 			${htmlText}
-		</div>
-	</foreignObject>
-</svg>`;
-		Deno.writeTextFile(fileProps.out, svgText);
+		`;
+		const svgLight = returnSvg`
+			${fileProps.width}
+			${fileProps.height}
+			${varsLight}
+			${indentedCss}
+			${htmlText}
+		`;
+		Deno.writeTextFile(fileProps.out.replace(".svg", "-dark.svg"), svgDark);
+		Deno.writeTextFile(
+			fileProps.out.replace(".svg", "-light.svg"),
+			svgLight
+		);
 	}
 };
 
 for await (const event of watcher) {
 	if (event.kind == "modify") {
-		const [_, __, fileName] = event.paths[0]
+		const [_, folder, fileName] = event.paths[0]
 			.split("\\")
 			.pop()
-			?.split("/") as [string, "src", string];
+			?.split("/") as [string, "src" | "preflight", string];
+
 		console.log(
 			`%c[File change]: %c${fileName}%c changed`,
 			`color: yellow; fontweight: bold`,
 			`color: green;text-decoration: underline; fontweight: bold`,
 			`color: #222; fontweight: bold`
 		);
-		const fileObj = files.find(
-			(file) => file.name === fileName.split(".")[0]
-		)!;
-		compileFile(fileObj);
+		if (folder == "src") {
+			const fileObj = files.find(
+				(file) => file.name === fileName.split(".")[0]
+			)!;
+			compileFile(fileObj);
+		} else {
+			for (const fileObj of files) {
+				compileFile(fileObj);
+			}
+		}
 	}
 }

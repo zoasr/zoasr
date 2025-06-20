@@ -1,36 +1,11 @@
-@use "_preflight";
+@use "../preflight/_preflight";
 
-:root {
-	--color-1: #000222;
-	--color-2: #000448;
-	--color-3: #00066e;
-	--color-text: #000dff;
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 50%, #0f172a 100%);
-	color: white;
-	min-height: 100vh;
-	overflow-x: hidden;
-}
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2rem;
-	position: relative;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 4rem;
-}
+// :root {
+// 	--color-1: #000222;
+// 	--color-2: #000448;
+// 	--color-3: #00066e;
+// 	--color-text: #000794;
+// }
 
 .background-decoration {
 	position: absolute;
@@ -76,6 +51,7 @@ body {
 	text-align: center;
 	z-index: 1;
 	position: relative;
+	--anim-index: 2;
 }
 
 .main-title {
@@ -90,7 +66,7 @@ body {
 
 .subtitle {
 	font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-	color: rgba(255, 255, 255, 0.8);
+	// color: rgba(255, 255, 255, 0.8);
 	max-width: 600px;
 	margin: 0 auto;
 	line-height: 1.6;
@@ -99,13 +75,14 @@ body {
 .skills {
 	z-index: 1;
 	position: relative;
+	--anim-index: 3;
 }
 
 .skills-title {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	text-align: center;
 	margin-bottom: 3rem;
-	color: rgba(255, 255, 255, 0.9);
+	// color: rgba(255, 255, 255, 0.9);
 	text-decoration: underline;
 	text-decoration-color: rgba(59, 130, 246, 0.5);
 	text-underline-offset: 8px;
@@ -131,7 +108,7 @@ body {
 .category-label {
 	font-size: 1.1rem;
 	margin-bottom: 1rem;
-	color: rgba(255, 255, 255, 0.9);
+	// color: rgba(255, 255, 255, 0.9);
 	font-weight: 600;
 }
 
