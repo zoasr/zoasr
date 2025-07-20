@@ -29,7 +29,7 @@
 		<img src="out/@lastfm-viewer-light.svg" align="center">
 	</picture>
 </a>
-<a href="https://supa-shop.vercel.app/">
+<a href="https://supa-shop.cloudflare-untying955.workers.dev">
 	<picture >
 		<source srcset="out/supa-shop-dark.svg" media="(prefers-color-scheme: dark)">
 		<img src="out/supa-shop-light.svg" align="center">
