@@ -35,6 +35,12 @@
 		<img src="out/supa-shop-light.svg" align="center">
 	</picture>
 </a>
+<a href="https://clinic-run-demo.vercel.app">
+	<picture >
+		<source srcset="out/clinic-run-dark.svg" media="(prefers-color-scheme: dark)">
+		<img src="out/clinic-run-light.svg" align="center">
+	</picture>
+</a>
 
 </p>
 <picture >

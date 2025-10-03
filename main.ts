@@ -82,6 +82,14 @@ const files: fileProps[] = [
 		height: "100px",
 		width: "200px",
 	},
+	{
+		name: "clinic-run",
+		html: "./src/clinic-run.html",
+		out: "./out/clinic-run.svg",
+		sass: "./src/clinic-run.scss",
+		height: "100px",
+		width: "200px",
+	},
 ];
 const watcher = Deno.watchFs(["./src/", "./preflight/"], {
 	recursive: false,
@@ -134,10 +142,8 @@ const compileFile = async (fileProps: fileProps) => {
 
 for await (const event of watcher) {
 	if (event.kind == "modify") {
-		const [_, folder, fileName] = event.paths[0]
-			.split("\\")
-			.pop()
-			?.split("/") as [string, "src" | "preflight", string];
+		const pathStrings = event.paths[0].split("\\")
+		const [folder, fileName] = [pathStrings[pathStrings.length - 2], pathStrings[pathStrings.length - 1]]
 
 		console.log(
 			`%c[File change]: %c${fileName}%c changed`,

@@ -1,0 +1,22 @@
+@use "../preflight/_preflight";
+
+main {
+	padding: 0rem;
+	display: block;
+}
+.container {
+	padding: 1rem;
+	border-radius: 5px;
+	--anim-index: 5;
+}
+
+.cls-1{
+	fill: var(--color-1);
+}
+.cls-2{
+	fill: var(--color-2);
+	animation: none;
+}
+.cls-3{
+	fill: var(--color-text);
+}
