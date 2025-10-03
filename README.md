@@ -41,8 +41,8 @@
 		<img src="out/clinic-run-light.svg" align="center">
 	</picture>
 </a>
-
 </p>
+
 <picture >
 	<source srcset="static/separator-dark.svg" media="(prefers-color-scheme: dark)">
 	<img src="static/separator.svg" width="100%" height="100%" align="left">
