@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem;
+            background-color: #0d1117;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .preview-section {
+            margin-bottom: 3rem;
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        
+        .preview-title {
+            color: #ffd6b3;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ff6b35;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .preview-item {
+            background: #16213e;
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+        
+        .preview-item h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        .preview-item svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle:hover {
+            background: #ff8c5a;
+            transform: translateY(-2px);
+        }
+        
+        .instructions {
+            background: rgba(255, 107, 53, 0.1);
+            border: 1px solid #ff6b35;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .instructions h2 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+        
+        .instructions p {
+            color: #ffd6b3;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .instructions code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    
+    <div class="container">
+        <h1>🎨 README Preview</h1>
+        
+        <div class="instructions">
+            <h2>📖 Instructions</h2>
+            <p>This preview page shows all the SVG components that will be rendered in your README.md file.</p>
+            <p>The design now uses an orange color scheme similar to your portfolio website.</p>
+            <p>Use the <strong>Toggle Theme</strong> button to see how the SVGs look in both light and dark modes.</p>
+            <p>To regenerate the SVGs after making changes, run: <code>/home/engine/.deno/bin/deno task dev</code></p>
+            <p>Then refresh this page to see the updated SVGs.</p>
+        </div>
+        
+        <div class="preview-section">
+            <h2 class="preview-title">Header Section</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <h3>Header (Light)</h3>
+                    <img src="out/header-light.svg" alt="Header Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Header (Dark)</h3>
+                    <img src="out/header-dark.svg" alt="Header Dark" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <h2 class="preview-title">Section Headers</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <h3>Projects (Light)</h3>
+                    <img src="out/projects-light.svg" alt="Projects Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Projects (Dark)</h3>
+                    <img src="out/projects-dark.svg" alt="Projects Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>Reach Me (Light)</h3>
+                    <img src="out/reach-me-light.svg" alt="Reach Me Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Reach Me (Dark)</h3>
+                    <img src="out/reach-me-dark.svg" alt="Reach Me Dark" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <h2 class="preview-title">Project Badges</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <h3>Machlist (Light)</h3>
+                    <img src="out/machlist-light.svg" alt="Machlist Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Machlist (Dark)</h3>
+                    <img src="out/machlist-dark.svg" alt="Machlist Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>Last.fm Viewer (Light)</h3>
+                    <img src="out/@lastfm-viewer-light.svg" alt="Last.fm Viewer Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Last.fm Viewer (Dark)</h3>
+                    <img src="out/@lastfm-viewer-dark.svg" alt="Last.fm Viewer Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>Supa Shop (Light)</h3>
+                    <img src="out/supa-shop-light.svg" alt="Supa Shop Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Supa Shop (Dark)</h3>
+                    <img src="out/supa-shop-dark.svg" alt="Supa Shop Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>Clinic Run (Light)</h3>
+                    <img src="out/clinic-run-light.svg" alt="Clinic Run Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Clinic Run (Dark)</h3>
+                    <img src="out/clinic-run-dark.svg" alt="Clinic Run Dark" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <h2 class="preview-title">Social Links</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <h3>Website (Light)</h3>
+                    <img src="out/website-light.svg" alt="Website Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>Website (Dark)</h3>
+                    <img src="out/website-dark.svg" alt="Website Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>LinkedIn (Light)</h3>
+                    <img src="out/linkedin-light.svg" alt="LinkedIn Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>LinkedIn (Dark)</h3>
+                    <img src="out/linkedin-dark.svg" alt="LinkedIn Dark" />
+                </div>
+                <div class="preview-item">
+                    <h3>GitHub (Light)</h3>
+                    <img src="out/github-light.svg" alt="GitHub Light" />
+                </div>
+                <div class="preview-item">
+                    <h3>GitHub (Dark)</h3>
+                    <img src="out/github-dark.svg" alt="GitHub Dark" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleTheme() {
+            if (document.body.style.backgroundColor === 'rgb(255, 245, 237)' || 
+                document.body.style.backgroundColor === '#fff5ed') {
+                document.body.style.backgroundColor = '#0d1117';
+                document.querySelectorAll('.preview-section, .preview-item').forEach(el => {
+                    el.style.backgroundColor = el.classList.contains('preview-section') ? '#1a1a2e' : '#16213e';
+                });
+                document.querySelectorAll('.preview-title, .preview-item h3').forEach(el => {
+                    el.style.color = el.classList.contains('preview-title') ? '#ffd6b3' : '#ff6b35';
+                });
+                document.querySelector('h1').style.color = '#ff6b35';
+                document.querySelector('.instructions').style.backgroundColor = 'rgba(255, 107, 53, 0.1)';
+                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#ffd6b3');
+                document.querySelectorAll('.instructions h2').forEach(el => el.style.color = '#ff6b35');
+            } else {
+                document.body.style.backgroundColor = '#fff5ed';
+                document.querySelectorAll('.preview-section, .preview-item').forEach(el => {
+                    el.style.backgroundColor = el.classList.contains('preview-section') ? '#ffffff' : '#f5f5f5';
+                });
+                document.querySelectorAll('.preview-title, .preview-item h3').forEach(el => {
+                    el.style.color = '#ff6b35';
+                });
+                document.querySelector('h1').style.color = '#ff6b35';
+                document.querySelector('.instructions').style.backgroundColor = 'rgba(255, 107, 53, 0.05)';
+                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#1a1a2e');
+                document.querySelectorAll('.instructions h2').forEach(el => el.style.color = '#ff6b35');
+            }
+        }
+    </script>
+</body>
+</html>
