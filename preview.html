@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README Preview</title>
+    <title>README Preview - 8-Bit Pixel Art</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +12,12 @@
         }
         
         body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Courier New', Courier, monospace, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             padding: 2rem;
-            background-color: #0d1117;
+            background-color: #000000;
+            color: #ffffff;
             min-height: 100vh;
+            image-rendering: pixelated;
         }
         
         .container {
@@ -24,24 +26,36 @@
         }
         
         h1 {
-            color: #ff6b35;
+            color: #00ff00;
             margin-bottom: 2rem;
-            font-size: 2rem;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            border: 4px solid #ffffff;
+            padding: 1rem;
+            background: #0a0a0a;
+            display: inline-block;
         }
         
         .preview-section {
             margin-bottom: 3rem;
-            background: #1a1a2e;
-            border-radius: 12px;
+            border: 4px solid #ffffff;
+            background: #000000;
             padding: 2rem;
         }
         
         .preview-title {
-            color: #ffd6b3;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #ff6b35;
+            color: #ff00ff;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 4px solid #00ff00;
+            background: #0a0a0a;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
         }
         
         .preview-grid {
@@ -51,69 +65,86 @@
         }
         
         .preview-item {
-            background: #16213e;
-            border-radius: 8px;
+            border: 4px solid #00ff00;
+            background: #0a0a0a;
             padding: 1rem;
-            border: 1px solid rgba(255, 107, 53, 0.2);
         }
         
         .preview-item h3 {
-            color: #ff6b35;
+            color: #00ff00;
             margin-bottom: 1rem;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #ffffff;
+            padding-bottom: 0.5rem;
         }
         
-        .preview-item svg {
+        .preview-item img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 4px;
+            border: 3px solid #ffffff;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
         }
         
         .theme-toggle {
             position: fixed;
             top: 2rem;
             right: 2rem;
-            background: #ff6b35;
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
+            background: #000000;
+            color: #00ff00;
+            border: 4px solid #00ff00;
+            padding: 1rem 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             cursor: pointer;
             font-size: 1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            font-family: 'Courier New', Courier, monospace;
         }
         
         .theme-toggle:hover {
-            background: #ff8c5a;
-            transform: translateY(-2px);
+            background: #00ff00;
+            color: #000000;
         }
         
         .instructions {
-            background: rgba(255, 107, 53, 0.1);
-            border: 1px solid #ff6b35;
-            border-radius: 8px;
+            border: 4px solid #ff00ff;
+            background: #0a0a0a;
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
         
         .instructions h2 {
-            color: #ff6b35;
+            color: #ff00ff;
             margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         .instructions p {
-            color: #ffd6b3;
+            color: #ffffff;
             line-height: 1.6;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+        
+        .instructions strong {
+            color: #00ff00;
         }
         
         .instructions code {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            font-family: monospace;
+            background: #000000;
+            color: #00ff00;
+            padding: 0.3rem 0.6rem;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid #ffffff;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -121,116 +152,116 @@
     <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
     
     <div class="container">
-        <h1>🎨 README Preview</h1>
+        <h1>> README Preview</h1>
         
         <div class="instructions">
-            <h2>📖 Instructions</h2>
-            <p>This preview page shows all the SVG components that will be rendered in your README.md file.</p>
-            <p>The design now uses an orange color scheme similar to your portfolio website.</p>
-            <p>Use the <strong>Toggle Theme</strong> button to see how the SVGs look in both light and dark modes.</p>
-            <p>To regenerate the SVGs after making changes, run: <code>/home/engine/.deno/bin/deno task dev</code></p>
-            <p>Then refresh this page to see the updated SVGs.</p>
+            <h2>> INSTRUCTIONS</h2>
+            <p>This preview page shows all <strong>SVG components</strong> that will be rendered in your README.md file.</p>
+            <p>The design now uses a <strong>8-bit/16-bit pixel art</strong> brutalist aesthetic with neon green (#00ff00) and hot pink (#ff00ff) accents.</p>
+            <p>Use <strong>Toggle Theme</strong> button to see how SVGs look in both light and dark modes.</p>
+            <p>To regenerate SVGs after making changes, run: <code>deno task dev</code></p>
+            <p>Then refresh this page to see updated SVGs.</p>
         </div>
         
         <div class="preview-section">
-            <h2 class="preview-title">Header Section</h2>
+            <h2 class="preview-title">>> Header Section</h2>
             <div class="preview-grid">
                 <div class="preview-item">
-                    <h3>Header (Light)</h3>
+                    <h3>> Header (Light)</h3>
                     <img src="out/header-light.svg" alt="Header Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Header (Dark)</h3>
+                    <h3>> Header (Dark)</h3>
                     <img src="out/header-dark.svg" alt="Header Dark" />
                 </div>
             </div>
         </div>
         
         <div class="preview-section">
-            <h2 class="preview-title">Section Headers</h2>
+            <h2 class="preview-title">>> Section Headers</h2>
             <div class="preview-grid">
                 <div class="preview-item">
-                    <h3>Projects (Light)</h3>
+                    <h3>> Projects (Light)</h3>
                     <img src="out/projects-light.svg" alt="Projects Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Projects (Dark)</h3>
+                    <h3>> Projects (Dark)</h3>
                     <img src="out/projects-dark.svg" alt="Projects Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>Reach Me (Light)</h3>
+                    <h3>> Reach Me (Light)</h3>
                     <img src="out/reach-me-light.svg" alt="Reach Me Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Reach Me (Dark)</h3>
+                    <h3>> Reach Me (Dark)</h3>
                     <img src="out/reach-me-dark.svg" alt="Reach Me Dark" />
                 </div>
             </div>
         </div>
         
         <div class="preview-section">
-            <h2 class="preview-title">Project Badges</h2>
+            <h2 class="preview-title">>> Project Badges</h2>
             <div class="preview-grid">
                 <div class="preview-item">
-                    <h3>Machlist (Light)</h3>
+                    <h3>> Machlist (Light)</h3>
                     <img src="out/machlist-light.svg" alt="Machlist Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Machlist (Dark)</h3>
+                    <h3>> Machlist (Dark)</h3>
                     <img src="out/machlist-dark.svg" alt="Machlist Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>Last.fm Viewer (Light)</h3>
+                    <h3>> Last.fm Viewer (Light)</h3>
                     <img src="out/@lastfm-viewer-light.svg" alt="Last.fm Viewer Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Last.fm Viewer (Dark)</h3>
+                    <h3>> Last.fm Viewer (Dark)</h3>
                     <img src="out/@lastfm-viewer-dark.svg" alt="Last.fm Viewer Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>Supa Shop (Light)</h3>
+                    <h3>> Supa Shop (Light)</h3>
                     <img src="out/supa-shop-light.svg" alt="Supa Shop Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Supa Shop (Dark)</h3>
+                    <h3>> Supa Shop (Dark)</h3>
                     <img src="out/supa-shop-dark.svg" alt="Supa Shop Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>Clinic Run (Light)</h3>
+                    <h3>> Clinic Run (Light)</h3>
                     <img src="out/clinic-run-light.svg" alt="Clinic Run Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Clinic Run (Dark)</h3>
+                    <h3>> Clinic Run (Dark)</h3>
                     <img src="out/clinic-run-dark.svg" alt="Clinic Run Dark" />
                 </div>
             </div>
         </div>
         
         <div class="preview-section">
-            <h2 class="preview-title">Social Links</h2>
+            <h2 class="preview-title">>> Social Links</h2>
             <div class="preview-grid">
                 <div class="preview-item">
-                    <h3>Website (Light)</h3>
+                    <h3>> Website (Light)</h3>
                     <img src="out/website-light.svg" alt="Website Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>Website (Dark)</h3>
+                    <h3>> Website (Dark)</h3>
                     <img src="out/website-dark.svg" alt="Website Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>LinkedIn (Light)</h3>
+                    <h3>> LinkedIn (Light)</h3>
                     <img src="out/linkedin-light.svg" alt="LinkedIn Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>LinkedIn (Dark)</h3>
+                    <h3>> LinkedIn (Dark)</h3>
                     <img src="out/linkedin-dark.svg" alt="LinkedIn Dark" />
                 </div>
                 <div class="preview-item">
-                    <h3>GitHub (Light)</h3>
+                    <h3>> GitHub (Light)</h3>
                     <img src="out/github-light.svg" alt="GitHub Light" />
                 </div>
                 <div class="preview-item">
-                    <h3>GitHub (Dark)</h3>
+                    <h3>> GitHub (Dark)</h3>
                     <img src="out/github-dark.svg" alt="GitHub Dark" />
                 </div>
             </div>
@@ -238,32 +269,71 @@
     </div>
     
     <script>
+        let isDark = true;
+        
         function toggleTheme() {
-            if (document.body.style.backgroundColor === 'rgb(255, 245, 237)' || 
-                document.body.style.backgroundColor === '#fff5ed') {
-                document.body.style.backgroundColor = '#0d1117';
-                document.querySelectorAll('.preview-section, .preview-item').forEach(el => {
-                    el.style.backgroundColor = el.classList.contains('preview-section') ? '#1a1a2e' : '#16213e';
+            isDark = !isDark;
+            
+            if (isDark) {
+                // Dark mode
+                document.body.style.backgroundColor = '#000000';
+                document.body.style.color = '#ffffff';
+                document.querySelectorAll('.preview-section').forEach(el => {
+                    el.style.backgroundColor = '#000000';
+                    el.style.borderColor = '#ffffff';
+                });
+                document.querySelectorAll('.preview-item').forEach(el => {
+                    el.style.backgroundColor = '#0a0a0a';
+                    el.style.borderColor = '#00ff00';
                 });
                 document.querySelectorAll('.preview-title, .preview-item h3').forEach(el => {
-                    el.style.color = el.classList.contains('preview-title') ? '#ffd6b3' : '#ff6b35';
+                    el.style.color = '#ff00ff';
+                    el.style.borderColor = '#00ff00';
                 });
-                document.querySelector('h1').style.color = '#ff6b35';
-                document.querySelector('.instructions').style.backgroundColor = 'rgba(255, 107, 53, 0.1)';
-                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#ffd6b3');
-                document.querySelectorAll('.instructions h2').forEach(el => el.style.color = '#ff6b35');
+                document.querySelector('h1').style.color = '#00ff00';
+                document.querySelector('h1').style.borderColor = '#ffffff';
+                document.querySelector('h1').style.backgroundColor = '#0a0a0a';
+                document.querySelector('.instructions').style.backgroundColor = '#0a0a0a';
+                document.querySelector('.instructions').style.borderColor = '#ff00ff';
+                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#ffffff');
+                document.querySelectorAll('.instructions h2').forEach(el => {
+                    el.style.color = '#ff00ff';
+                });
+                document.querySelectorAll('.instructions code').forEach(el => {
+                    el.style.color = '#00ff00';
+                    el.style.backgroundColor = '#000000';
+                    el.style.borderColor = '#ffffff';
+                });
             } else {
-                document.body.style.backgroundColor = '#fff5ed';
-                document.querySelectorAll('.preview-section, .preview-item').forEach(el => {
-                    el.style.backgroundColor = el.classList.contains('preview-section') ? '#ffffff' : '#f5f5f5';
+                // Light mode
+                document.body.style.backgroundColor = '#ffffff';
+                document.body.style.color = '#000000';
+                document.querySelectorAll('.preview-section').forEach(el => {
+                    el.style.backgroundColor = '#ffffff';
+                    el.style.borderColor = '#000000';
+                });
+                document.querySelectorAll('.preview-item').forEach(el => {
+                    el.style.backgroundColor = '#e8e8e8';
+                    el.style.borderColor = '#000000';
                 });
                 document.querySelectorAll('.preview-title, .preview-item h3').forEach(el => {
-                    el.style.color = '#ff6b35';
+                    el.style.color = '#ff00ff';
+                    el.style.borderColor = '#00ff00';
                 });
-                document.querySelector('h1').style.color = '#ff6b35';
-                document.querySelector('.instructions').style.backgroundColor = 'rgba(255, 107, 53, 0.05)';
-                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#1a1a2e');
-                document.querySelectorAll('.instructions h2').forEach(el => el.style.color = '#ff6b35');
+                document.querySelector('h1').style.color = '#00ff00';
+                document.querySelector('h1').style.borderColor = '#000000';
+                document.querySelector('h1').style.backgroundColor = '#e8e8e8';
+                document.querySelector('.instructions').style.backgroundColor = '#e8e8e8';
+                document.querySelector('.instructions').style.borderColor = '#ff00ff';
+                document.querySelectorAll('.instructions p').forEach(el => el.style.color = '#000000');
+                document.querySelectorAll('.instructions h2').forEach(el => {
+                    el.style.color = '#ff00ff';
+                });
+                document.querySelectorAll('.instructions code').forEach(el => {
+                    el.style.color = '#00ff00';
+                    el.style.backgroundColor = '#ffffff';
+                    el.style.borderColor = '#000000';
+                });
             }
         }
     </script>

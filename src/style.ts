@@ -5,25 +5,29 @@ const indent = (css: string) => {
 };
 const varsLight = indent(`
 :root {
-    --color-1: #fff5ed;
-    --color-2: #ffe8d6;
-    --color-3: #ffd6b3;
-    --color-text: #1a1a2e;
-    --color-accent: #ff6b35;
-    --color-accent-light: #ff8c5a;
-    --color-accent-dark: #e55a2b;
+    --color-1: #ffffff;
+    --color-2: #e8e8e8;
+    --color-3: #d4d4d4;
+    --color-text: #000000;
+    --color-accent: #00ff00;
+    --color-accent-light: #00ff88;
+    --color-accent-dark: #00cc00;
+    --color-border: #000000;
+    --color-secondary: #ff00ff;
 }
 `);
 
 const varsDark = indent(`
 :root {
-    --color-1: #1a1a2e;
-    --color-2: #16213e;
-    --color-3: #0f3460;
-    --color-text: #ffd6b3;
-    --color-accent: #ff6b35;
-    --color-accent-light: #ff8c5a;
-    --color-accent-dark: #e55a2b;
+    --color-1: #000000;
+    --color-2: #0a0a0a;
+    --color-3: #141414;
+    --color-text: #ffffff;
+    --color-accent: #00ff00;
+    --color-accent-light: #00ff88;
+    --color-accent-dark: #00cc00;
+    --color-border: #ffffff;
+    --color-secondary: #ff00ff;
 }
 `);
 
