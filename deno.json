@@ -2,6 +2,7 @@
   "tasks": {
     "dev": "deno run --allow-env --allow-write --allow-read --allow-net main.ts",
     "build": "deno run --allow-env --allow-write --allow-read --allow-net main.ts --build",
-    "check": "deno run --allow-read --allow-net main.ts --check"
+    "check": "deno run --allow-read --allow-net main.ts --check",
+    "update-stats": "deno run --allow-env --allow-write --allow-read --allow-net scripts/update-stats.ts"
   }
 }

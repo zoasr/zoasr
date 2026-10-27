@@ -1,0 +1,45 @@
+name: Weekly Dynamic Stats Update
+
+on:
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # Allows manual run anytime from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Update stats and rebuild banners
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          deno task update-stats
+
+      - name: Verify build integrity
+        run: |
+          deno task check
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/contributions.json src/@lastfm-viewer.html src/lastfm-ts-api.html README.md out/
+          if git diff --staged --quiet; then
+            echo "No stats changed this week."
+          else
+            git commit -m "chore(stats): weekly update dynamic stats [skip ci]"
+            git push
+          fi

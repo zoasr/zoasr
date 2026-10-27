@@ -353,7 +353,7 @@ const returnSvg = (
 </svg>`;
 };
 
-const build = async () => {
+export const build = async () => {
 	const { days, total, start, end } = await loadContributions();
 	const countLabel = new Intl.NumberFormat("en-US").format(total);
 	const dateFormat = new Intl.DateTimeFormat("en-GB", {
@@ -399,30 +399,32 @@ const build = async () => {
 	);
 };
 
-if (Deno.args.includes("--build")) {
-	await build();
-	Deno.exit(0);
-}
+if (import.meta.main) {
+	if (Deno.args.includes("--build")) {
+		await build();
+		Deno.exit(0);
+	}
 
-if (Deno.args.includes("--check")) {
-	const { total, days } = await loadContributions();
-	const spiral = spiralMarkup(days);
-	const rendered = spiral.match(/<line class="day/g)?.length ?? 0;
-	if (rendered !== days.length) throw new Error("spiral tick count mismatch");
-	console.log(
-		`contributions ${total} · ${days.length} days · ${rendered} ticks · ok`,
-	);
-	Deno.exit(0);
-}
+	if (Deno.args.includes("--check")) {
+		const { total, days } = await loadContributions();
+		const spiral = spiralMarkup(days);
+		const rendered = spiral.match(/<line class="day/g)?.length ?? 0;
+		if (rendered !== days.length) throw new Error("spiral tick count mismatch");
+		console.log(
+			`contributions ${total} · ${days.length} days · ${rendered} ticks · ok`,
+		);
+		Deno.exit(0);
+	}
 
-let timer: number | undefined;
-const watcher = Deno.watchFs(["./src", "./preflight"], { recursive: false });
+	let timer: number | undefined;
+	const watcher = Deno.watchFs(["./src", "./preflight"], { recursive: false });
 
-for await (const event of watcher) {
-	if (event.kind === "access") continue;
-	clearTimeout(timer);
-	timer = setTimeout(() => {
-		build().catch((error) => console.error(error.message));
-	}, 120);
+	for await (const event of watcher) {
+		if (event.kind === "access") continue;
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			build().catch((error) => console.error(error.message));
+		}, 120);
+	}
 }
 

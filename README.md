@@ -1,7 +1,7 @@
 <p align="left">
 	<picture>
 		<source srcset="out/topbar-dark.svg" media="(prefers-color-scheme: dark)">
-		<img src="out/topbar-light.svg" width="100%" height="24" alt="zoasr / readme.md, 2,846 contributions">
+		<img src="out/topbar-light.svg" width="100%" height="24" alt="zoasr / readme.md, 2,847 contributions">
 	</picture><br>
 	<a href="https://zoasr-portfolio.pages.dev/">
 		<picture>
@@ -26,7 +26,7 @@
 <p align="left">
 	<picture>
 		<source srcset="out/header-dark.svg" media="(prefers-color-scheme: dark)">
-		<img src="out/header-light.svg" width="100%" height="520" alt="zoasr monogram logo, Zeyad — a Giza-based developer making web apps, npm packages and p5 sketches. 2,846 contributions in the last 12 months, drawn in ember.">
+		<img src="out/header-light.svg" width="100%" height="520" alt="zoasr monogram logo, Zeyad — a Giza-based developer making web apps, npm packages and p5 sketches. 2,847 contributions in the last 12 months, drawn in ember.">
 	</picture>
 </p>
 
@@ -38,7 +38,7 @@
 	<a href="https://lastfm-viewer.vercel.app/">
 		<picture>
 			<source srcset="out/@lastfm-viewer-dark.svg" media="(prefers-color-scheme: dark)">
-			<img src="out/@lastfm-viewer-light.svg" width="100%" height="76" alt="@lastfm-viewer: scrobble viewers for React, Svelte and Solid. 502 npm downloads per month.">
+			<img src="out/@lastfm-viewer-light.svg" width="100%" height="76" alt="@lastfm-viewer: scrobble viewers for React, Svelte and Solid. 758 npm downloads per month.">
 		</picture>
 	</a><br>
 	<a href="https://github.com/zoasr/oversec-stego">
