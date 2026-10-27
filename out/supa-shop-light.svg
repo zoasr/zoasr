@@ -1,62 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="200px" height="100px">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="76px">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
 			<style>
 			
+				/* Hallmark · v2.0.0 · Ember file view · light: warm ink on GitHub paper, burnt-orange signal · the contribution grid carries the colour */
 				:root {
-					--color-1: #9fa3ec;
-					--color-2: #9fa3ec;
-					--color-3: #9fa3ec;
-					--color-text: #000222;
+					--color-ink: oklch(23.5% 0.015 48.1);
+					--color-ink-2: oklch(36.9% 0.023 48.1);
+					--color-muted: oklch(48.4% 0.025 51.2);
+					--color-accent: oklch(51.8% 0.163 36.9);
+					--color-focus: oklch(51.8% 0.163 36.9);
+					--color-dot-0: oklch(94% 0.009 62.6);
+					--color-dot-1: oklch(88.8% 0.048 51.6);
+					--color-dot-2: oklch(77.1% 0.103 52.4);
+					--color-dot-3: oklch(63.5% 0.154 45.9);
+					--color-dot-4: oklch(51.8% 0.163 36.9);
+					--font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+					--text-meta: 12px;
+					--text-body: 14px;
+					--text-name: 18px;
+					--text-intro: 22px;
+					--space-2xs: 4px;
+					--space-xs: 8px;
+					--space-sm: 12px;
+					--space-md: 16px;
+					--space-lg: 28px;
+					--space-xl: 56px;
+					--radius-dot: 2px;
+					--dur-settle: 700ms;
+					--dur-column: 900ms;
+					--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+					--stagger-settle: 90ms;
+					--stagger-column: 18ms;
 				}
 
-							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"}ul,li{list-style-type:none}main svg#Layer_2{position:absolute;inset:50% 10% auto 10%;top:50%;translate:0 -50%;z-index:0;opacity:.2;scale:0;animation:scale 1s ease-in-out forwards;animation-delay:2s}@keyframes scale{0%{scale:0}100%{scale:1}}main{padding:1rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;color:var(--color-text)}.cls-1{fill:var(--color-text)}.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;stroke:var(--color-text);animation:pulsate-stroke 5s ease-in-out infinite alternate}@keyframes pulsate-stroke{0%{stroke-width:10px}100%{stroke-width:40px}}.links{display:flex;justify-content:center;gap:1rem}.links .link{display:flex;align-items:center}.links .link a{text-decoration:underline;font-weight:bold;color:var(--color-text)}.links .link .link-logo svg{display:block;fill:var(--color-text)}.links .link-icon{color:var(--color-text);animation:rotate .5s ease-in-out infinite alternate}@keyframes rotate{0%{translate:0 0}100%{translate:10% -10%}}main>*{--anim-index:0;--anim-stagger:.4s;animation-name:reveal;animation-duration:1s;animation-timing-function:cubic-bezier(.23, 1, .32, 1);animation-fill-mode:forwards;animation-delay:calc(var(--anim-stagger, 1s) * var(--anim-index, 0));opacity:0;transform:translateY(-20px);perspective:20px;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:0 0 -100px}@keyframes reveal{0%{opacity:0;transform:rotateY(45deg)}100%{opacity:1;transform:rotateY(0)}}main{padding:0rem;display:block}.container{padding:1rem;border-radius:5px;--anim-index:5}
+							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:var(--font-body)}html,body{overflow-x:clip}main{position:relative;width:100%;height:100%;color:var(--color-ink);background:transparent;overflow:clip}.page{display:flex;flex-direction:column;width:100%;height:100%;padding:0 var(--space-lg)}p{font-size:var(--text-body);line-height:1.5}b{font-weight:600}a{color:var(--color-accent);text-decoration:none}a:focus-visible,:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}::selection{background:var(--color-accent);color:var(--color-ink)}.settle{animation:settle var(--dur-settle) var(--ease-out) both;animation-delay:var(--delay, 0ms)}@keyframes settle{from{opacity:0;transform:translateY(6px)}}@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}.row-page{justify-content:center}.row{display:grid;grid-template-columns:40px minmax(0, 1fr) auto;align-items:center;gap:var(--space-md);width:100%}.idx{font-size:var(--text-meta);line-height:1;color:var(--color-muted);font-variant-numeric:tabular-nums}.row--lead .idx{color:var(--color-accent);animation:breathe 6s ease-in-out 1.4s infinite}.body{display:flex;align-items:baseline;gap:var(--space-sm);min-width:0}.name{font-size:var(--text-name);font-weight:600;line-height:1.1;letter-spacing:-.01em;color:var(--color-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mark{flex:none;align-self:center;width:18px;height:18px;border-radius:4px;object-fit:contain}.row--compact .mark{width:16px;height:16px;border-radius:3px}.desc{font-size:var(--text-body);line-height:1.4;color:var(--color-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.meta{font-size:var(--text-meta);line-height:1.2;color:var(--color-muted);white-space:nowrap;font-variant-numeric:tabular-nums}.meta b{color:var(--color-accent)}.row--compact{grid-template-columns:minmax(0, 1fr) auto}.row--compact .name{font-size:var(--text-body)}.row--compact .desc{font-size:var(--text-meta)}.row--compact .meta{font-size:11px}@keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}@media (max-width: 640px){.row{grid-template-columns:28px minmax(0, 1fr) auto;gap:var(--space-xs)}.meta{display:none}.name{max-width:100%;font-size:16px;white-space:normal}.desc{max-width:100%;font-size:13px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.row--compact .name{font-size:var(--text-body)}.row--compact .desc{font-size:var(--text-meta);-webkit-line-clamp:1}}
 			</style>
-			<main class="main">
-	<div class="container">
-		<div class="links">
-			<div class="link">
-				<div class="link-logo">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 512 512"
-						width="30px"
-						height="30px"
-					>
-						<g class="cls-1">
-							<path
-								class="cls-1"
-								d="m321.78,367.69c-44.16,0-88.32,0-132.48,0-13.44,0-19.01-3.94-23.51-16.44-27.26-75.57-54.56-151.13-81.72-226.74-1.38-3.83-3.17-5.27-7.29-5.21-15.49.23-30.99.14-46.48.07-9.33-.05-15.43-4.42-17.47-12.24-2.36-9.07,4.33-18.43,13.7-18.5,22.31-.18,44.63-.17,66.94.02,6.42.06,10.86,3.28,13.17,9.71,19.65,54.92,39.46,109.79,59.19,164.68,8.23,22.88,16.46,45.76,24.56,68.69,1.3,3.67,3.06,5.25,7.29,5.25,81.66-.15,163.31-.11,244.97-.11,7.82,0,7.79-.02,10.63-7.48,5.82-15.24,11.65-30.48,17.53-45.7,1.28-3.31,2.71-6.61,5-9.35,3.43-4.09,7.72-5.88,13.19-4.69,5.4,1.17,8.61,4.32,10.3,9.49.86,2.63-.02,4.96-.78,7.23-7.59,22.62-15.21,45.23-23.01,67.78-3.13,9.06-9.86,13.56-19.38,13.56-44.78,0-89.56,0-134.34,0Z"
-							/>
-							<path
-								class="cls-1"
-								d="m288.98,213.02c-5.89,0-11.78.13-17.67-.03-7.72-.2-10.49-5.72-6.18-12.28,1.35-2.05,3.17-3.8,4.76-5.69,37.16-44.21,74.97-87.88,111.17-132.9,3.06-3.81,5.96-7.98,12.05-7.13,5.08.71,7.79,3.82,6.57,8.9-7.33,30.56-14.75,61.1-22.12,91.66-.79,3.27-1.44,6.58-2.16,9.87,3.38.12,6.76.31,10.14.33,7.9.06,15.81.03,23.71.04.77,0,1.55-.03,2.32.03,3.23.23,7.12-.08,8.75,3.09,1.8,3.48-.94,6.5-3.11,9.08-16.83,20.04-33.72,40.03-50.61,60.02-21.39,25.31-42.79,50.62-64.19,75.92-2.31,2.73-4.6,5.41-8.67,5.55-6.14.21-9.83-3.74-8.33-9.68,3.83-15.24,7.85-30.43,11.91-45.61,4.1-15.33,8.36-30.62,12.51-45.94,1.36-5.02,1.3-5.05-4.14-5.06-5.58-.01-11.16,0-16.74,0v-.17Z"
-							/>
-							<path
-								class="cls-1"
-								d="m188.12,195.58c0-19.99.03-39.98-.01-59.98-.02-11.64,5.02-20.57,14.59-26.87,13.41-8.83,28.71-12.54,44.2-15.48,30.9-5.87,62.16-6.17,93.45-5.75.95.01,2.36-.7,2.79.62.15.46-.95,1.38-1.54,2.04-5.17,5.77-10.43,11.45-15.49,17.31-1.79,2.07-3.71,2.69-6.4,2.71-28.68.16-57.12,2.5-84.91,10.16-6.85,1.89-13.4,4.48-19.57,8.14-5.08,3.01-5.12,8.66.29,11.48,12.31,6.44,25.5,10.05,38.97,12.67,8.63,1.68,17.4,2.62,26.13,3.71,2.28.28,3.87.14,1.48,2.79-4.87,5.41-9.65,10.9-14.37,16.44-.98,1.15-1.89,1.15-3.23.97-17.34-2.32-34.33-5.92-50.3-13.36-2.04-.95-2.83-1.08-2.78,1.68.16,9.92-.08,19.84.12,29.75.13,6.63,4.96,10.05,10.1,12.79,7.12,3.8,14.92,5.78,22.73,7.52,3.26.73,5.87,1.7,7.92,4.7,2.55,3.73,6.64,5.29,11.18,5.67,8.34.7,16.71,1.26,25.06.91,4.14-.17,4.27,1.14,3.02,4.42-1.31,3.44-2.15,7.07-3.09,10.64-.56,2.1-1.6,2.92-3.91,2.65-24.08-2.81-48.12-5.81-70.69-15.42-2.23-.95-2.47-.4-2.45,1.69.09,10.07.19,20.15,0,30.22-.08,3.89,2.57,5.42,5.07,7.1,8.43,5.64,17.91,8.92,27.58,11.62,9.51,2.66,19.15,4.79,29.02,5.69,3.57.33,5.22,1.27,3.56,5.35-1.91,4.69-3.23,9.64-4.56,14.54-.49,1.8-1.05,2.78-3.05,2.49-23.3-3.37-46.47-7.21-66.08-21.67-10-7.37-14.84-17.54-14.83-29.98,0-19.99,0-39.98,0-59.98Z"
-							/>
-							<path
-								class="cls-1"
-								d="m457.93,197.72c0,19.37-.55,38.76.18,58.11.54,14.38-5.83,24.17-17.03,31.78-13.55,9.21-29,13.46-44.75,16.75-22.96,4.8-46.26,6.11-69.64,6.44-1.1.02-2.7.86-3.33-.5-.49-1.07.98-1.75,1.63-2.54,4.99-6.12,10.15-12.1,14.99-18.34,1.74-2.24,3.58-2.77,6.25-2.84,23.26-.58,46.14-3.67,68.3-11.08,1.02-.34,2.06-.65,3.06-1.03,15.93-6.01,17.04-7.6,17.04-24.37,0-6.51-.06-13.02.05-19.53.04-2.37.04-3.2-2.75-1.81-14.55,7.26-30.31,10.19-46.24,12.35-.91.12-2.3,1.07-2.83-.1-.23-.51.93-1.74,1.56-2.57,5.78-7.47,11.65-14.86,17.34-22.4,1.36-1.8,3.06-2.4,5.04-2.88,7.53-1.79,14.86-4.13,21.44-8.34,4.28-2.73,6.84-6.11,6.52-11.77-.49-8.65-.12-17.35-.12-26.03,0-9.61-4.69-14.56-14.54-15.06-3.71-.19-7.44-.02-11.16-.06-.88,0-1.77-.18-2.65-.28.36-1.36,1.72-1.16,2.6-1.42,6.78-2.08,13.45-4.38,19.92-7.33,8.45-3.85,7.46-10.76.71-14.97-7.57-4.73-15.89-7.42-24.43-9.5-3.23-.79-4.15-1.92-2.99-5.2,1.69-4.78,3.09-9.69,4.22-14.63.56-2.44,1.5-3.02,3.78-2.47,10.8,2.61,21.52,5.51,31.16,11.26,10.89,6.51,16.88,15.82,16.72,28.95-.25,20.45-.06,40.91-.07,61.37Z"
-							/>
-							<path
-								class="cls-1"
-								d="m230.9,457.07c-20.55-.01-36.81-16.04-36.64-36.12.18-20.67,16.23-36.67,36.8-36.67,20.47,0,36.94,16.29,37.01,36.6.07,20.35-16.21,36.2-37.17,36.18Z"
-							/>
-							<path
-								class="cls-1"
-								d="m403.96,457.12c-20.35.02-36.43-16.05-36.43-36.39,0-20.46,15.94-36.46,36.32-36.45,20.34,0,36.74,16.41,36.79,36.78.05,20.31-15.96,36.04-36.68,36.06Z"
-							/>
-						</g>
-					</svg>
-				</div>
-				<a href="https://github.com/zoasr/supa-shop" target="_blank"
-					>supa-shop</a
-				>
-				<div class="link-icon">↗</div>
-			</div>
+			<main class="page row-page">
+	<div class="row">
+		<p class="idx">04</p>
+		<div class="body">
+			<img class="mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABGmSURBVGhD7VkHdFTltt4+IKQ3kkzJ9JJGQnolmTEkJDGFtEkjwHglCaT3QGLCKCEJNVICGBC4SLEgSBFBECMEQUB9WMBKUYMielEUnhf1ct7e/8xAUNRwL2+tu966e629Zuac/z9n9/3tf+A/9B/6f0QcwH2D2XT5359I2GcBhhGbLtG1/zIgm37++5JZ+F6AEfT7JY2mpC8urhaFH04KDNUT94HBgNoi02fOs8MYD7521y7laP2t5xKbn8s4Z1gO5AwzgHb4IpHIinbsjIycfHXiRO7ttLQvogDsclAxkxf+4N3sBRwt+hMiAXLQxUyw3yG6Z16HQg6B3jBaftj6AF/t2YyMH/6h13NHEhOfwmsWC3g8m5LgYLxPMv6eEmSN4BJr3l825wpLdzbwpm9v5JWYGL8Lp++od/vL5gIYM8kG141g639LRktrDcNNv4mGW2mbRE66xyNdH9yYxZ/6XKlg+o4WYfkLHe7lu+e7l784T1Gzf5kqozNh5UiQvZeSco6s/3V+PrdLc38LhRDlAXsSGcT43jsrISjeWqVsP8Mp55zl2OdtjNfwulvxc9VssY/BwmQRI90SnD3cWbcyzL1izxxRbd8haePRL2TNb3CKRz7kVJ2fcep5X3LqBZc49cJvOI+l1zhZ3YFzfl5JEScTxvddKyzkLubmch9lZv5jvUqVKtOvn+VRtXeJpPDxOHwsyw8I7jV743biTXu+Xb3gK07V8SmnmnP+NlbMOs0p8bqk9pU3QJVkD9p1lkxgjgl8H2j7hrPfwXUuwsq9T8ia3/pZPe8i54FCqudeQOE/4KQzjv8saTrytbih/7y4/uD7krqD78mqXnrFyk8fceR+zbof0PIDOTncZbT+uykpZ7PkEfGiptevqRdf5RStb3PS2gP7HXWL/JiwpIQxJ00UscjKIq7Tgz99+zL3mlf3Civ27RNU7tsvKH8Jee+r0pnHf1I88hGHlvzFPnPZeAAMI1XlSPYQci3ziGqkoHLP06p5RiNIm45cFVW93OdWtG2JY8FfK6zSlmYN03TEQnRb+IigxiAX74cCURLJlijtwsv5edyXaPnPdTruSkEB15+Q+FKIMjlKOv35ZySNRwcUGAHq+Zc4ac3LH1pFNQqZsQZ5HGD8AhsYt5gHrmV8UNaqwL9pNAS0+kNQWzAI9QGC8hcPMm90nOP407YvxR0jINhgbbQ6ubRkhE3S/DGSpmM/0hrBtO1bh0W1xYJXlS94t6ohYLYaQjs9IGqep21kh5costkXpNWyZWHxDQPZ2dylvFzuMxR+APlv6IHnY+IWa/ga72iXUA8r35IQ5wefmS9rfe9n1eyPObfCv05iMjOjmYtJ0pKREL3CCaKWoXaPyUCzWA2a5d6QsNQfAjp8HAs3PKwwvI/hdI6T1L36MYwuFaPg1uwhtFeqt7TNelwjwTBRzv6EQ6/tt0lbWgB+9cHAL5OCtIEP8iqedaiB7xFTL6fvswOidZ9kpF+lkCHhyfpfYgidycq6sSYgbGqGNN7bN7B0jO34Ls0o/VPt0paT10kBnn5zJUpMHrC8FUZkSQwjyOmxRQUcIW7ZKPSKGyQsFIO2RzU8ukMrru+/RMksx3h0ylmViyawYHuIfcpsbbKWx6IHrisMH3CqrgG2DpP4lKB09zqsYLVueWvTZRmLtCCcPKpeHhB6Ki114HsMF7PwxGT9d1JTB1qcRWGZ1l4Cu9jGZOdJa1fhu79VoGGUj7yPCmyswpi3glQ04K1kRlewUorhYLZqKoZIfK8DaJeIQFAi4ZXu3qLsoDA6zwnLdm3ATVYYEnaovC2oDPY26Y/HoQeuK2adIsEvyJrfZNWGElnV9Tmn7DzPyYqf2pwHIH4rKekNKpdmwc18GRU6lpT0bq+39+TekMj89oiUQn1gepxN8qJJkpb//jsLockbarCm2rKw/1U5x3gydU7WiPAmuYm84WPg2+auLZK3vsNKqqT+0EWLqEZP8EGPJS2xx3h2tJmwIl6CyU5Wss/qnYkhNIlX/PwqUfWBfkz+AWn1/sO2knE+R+Pjt5PwFO+/VoD4XHb2jTOZmdwnyN9ibux/IPN1CDOMEzUdu6yac4Zz05sVePI3CvyKUBkKragn7NDSQghr9RfVvnpW2X4Oy+L7nIt+Uwkmz0hIx5DzN9xS4NEPOKf89fXg2eoJHnVe4DPNxy2sMgLs4tUvaGJXXinI5y5grN9JeGK69wUyVaMz2bqf54anFFvHGBLEM45/r8KexBRwvbMHfku0gGKc8sGlWMAr2bFKiYlMZRLr/QtYBh2Yh/y6nG4qgG52zFldBYIqyQjtAl/e2NbRIz0q5Buj4w2XcnO4r/Ly7ij4YP4KS+oFXLsualy7ABQSaWhJkrjp2A9MgT8IoTsQCyULiO5ygtD5fMvslbnSljd/oTDCOn/FKn5OCAmPJdXFJm3ZeEnT8eukoKj2wAm7lIUTgJ8sBZA4FXrFR7ybmvaPnyZP4r7Bmv8NJitZeXACm5muUy7sGTt2rQ4rRVjUtHRR6Qs75Ib3b5B33fSbUYGyoSpAXZaaBsY6lVi/Rk9RzYG3SUiyNO/Bp5sBJtiBbwfPOmN5grEKYblFyEBNT1Lb97p06tNzM90D/Pf7eZW9FuzXeTAkqHtnWEQvJvL5r3/lDcqLK5gfR2M1e+JHJ2fJK/f2y2ae+B9l5+ccPVdpOG30gOvQFUBCL1AYRS9xBbcqnsvUrfMJH1FjE1Xvfw3E+UIImiOwTutJIg9QFZLU93+nwJd5LLqMlegrDgHbKfG07b3yoi0rIia0z+4YOXL8SVSAyuZgBUj4E4mJ75QIPdMw304pl/xo7OqNh69hH8ACcZpznbyhEkY12t2FApjMVFqpPwR1CyweeOwBSdPrP5IS0hnHrlunPJYIino36/SVyeYq5JjXO8tRt7pUOH3XZnFN30nEQT/IZr3Hybq/40YXbdqzQ+z64DkEbNS4zMJ/h2HzdmrqxR43t3TVxJWrZTOOfYUe6BNM3rTAKqmrVNR4/DKVUaMCD6ECf1qFBhGFEWkc0y0AdalCWLXvkJKgBSrBK3quGyDVxSp1eZqk6cTPrArlra8D90Y1eFR4gV+5n0tUY4wi0ZDll9NdHhqoj9s3NmbJtybrUx6QJxCBXlvj41dSKfQOTIguSg0akx/upMj1BXW1N8TNS8UkvsKSeMrGWqYAhTXJdRNO/BEZ4TIi0IUuBAOcpzzVonj0Q4TY5zhxzSunQF7kYZG2LFUyAxWY/RFnr+utACeEG1iFcI+XfVS7UuJRJE90CJfFWcg9jiY8cOTKRGMXvoR5cF6XzW0JCmoz2PJ9mjwj/HQeaXJJSI3CIny2N8NRMe1YRo9dJZzFm/LUDFaFzDTkMKIuHT/XgbwwfNy8GHHDa5cZtGh584Z91uMTwb8hAFv+AMFncV3fSUfdykLESDJ0nyM4THSSSvX8SO8saaMqRHsqNfVbSmBCoJfQ+rsjx66YDRbejwk9PVtcJAItSB0BXG3BOplvqW2P5pW+sEmB4aOc9S7nlL2yAORTeej5Rv7UzZPAJwdB3Z+TEWoQ/tD28EFYKuaX7d5JsIIAHqJPhBYp7s6FG9rkGOsEIeStJ7GcvvImTmDdboVrCtTJBo2nZ57s6dCoogtoeYr/7zBp+7Taba0AgRVy/7CUoIxgj/FtY/kFvdm84q2PuFcd2Ivw5DtV5wCnRjginL59N1hFCUcVbZutwnlD2XaScy3oiTbJ+CdEYUQYKWG1M/g28+wL1peRsDSpIUL9HKLaIsGz2tMhb22dqP7wGUpyNtDMxyqE1pM3n7ghTpurPxEdsfB7DJ8fcPo6MX5cf548NFVZuadf2dh/XtZw+CIm/N/lWMFUc7/A/X/DgWgAS/KJK/zi51bBmBmBEFg1xr320FlV1wVOPuPIVYeUrmCThH9GBC1w8iIAR8kc3RYsrjv0OYWRou1dzjF/TTkEdqqwYqkgfGb4KP3mJkHF/p3iuv6zUgRi8sbXfgwKKkw4lZRwhNNP4d5OTv6oVDEmS1z10lsKnLqUZFGs99RfaASVNB65SDiK99DWhRZxXSngVecBox9W2uavmy5re4/1GlHFnn0ACc4mAYdCOH1RT6DhR1wu5JXsXG+EFuc597Ld20AxWQLxj3nT4AIeD8tBUYWDTEuIY2JXiiC5K32KOkZzOi3tpw8zMq/0yJTpIfdX5ClKtuyQTdu21n3qsz2I9TucJ26stcnAOI/t0oBPvQ944PwQvdADYntGg2SS3K18705lx2ecEouI65SNM8BBj/kyZEIvqEzDDyJUG92qQlnLWzcYtGjo/wZC0MWiWhZiEGgQ4hoJWk1shc3OB0L5BS7h6q3BYdPWeninl4KDonqUp+cEAKELeAnAaoIQnItElF+gmCGBwHYpYz+DCLxaBCCocwFNWyQrp1jCZQ3931uOX6CBSMRpd0EmhIphRAg1oNnHvabvNHmBOi/voWe7HRDU2emeSLHLXpVqp+ud4Ji3Kt1ZtzJTMmGBzmfCnBz3xEdTvBNaM8KTmvO90zpy3TMX57hk9+Ta61bn2eh6823w01a3SmerW5Npi3vtclen2WWvSbVPXZLgWry9V/Hox8zjoordL9OcAtr5fJNsQyRKZjNCxRnaFYd2UkCOcSlve4dD7PL73Hyck5u+s8/mQfeGwOwdCFVU2CxZ+PCbXVlRuTtCBczQAhEqQQuEFL+oKAGx8jCg93/FsxGD4bgqrT/4/fCY9igIx1wMw4HqLsnYEwhakPu8H5bi0P2IuOHIR+KGw59hMzNy3aFPGbPfh8yMv83fTevYNfo8TPdM/Ov9Jm54jfiDUZOebAD/Oe4MYFI03DWZewJ5gQZ/f4MMQtpCQTMvFnMjFnwbIsGnKpqxX1MEjO26n92L7tAyjmnXQAxWmcFM12kNceDMSBhdMxb8amLArxb3t9+Pa8axNeFtwSy5x610Z9bPoeOVuyfTnLDOEhIWObPBX9ujgsilXuDfEjDqwafnYBc95F594JCL/plOiDAEobV8QLvYF+KXe4MW1w1mDZbe2O7RoFnmR4XBAUdS3LsP+8BR/tRtPRD96FiIXOjF9sYslUM8O/5xZPhsyIj0N8QAnvE4hj0Mw8mnSsIv2/W8EkGXEWYYD8NEZbteBL+ZCohZLmYvT0Y4Qr2EmL7TtfjFEpAUC1yKtixk56jsiPMcp8aGhc3uzRERrX7GBophw05DTMebZMx/mowoFaF2vQ0N+I6TnpxCKJWmJzrBYDwLJynsrm76jdMBdFbsFGMM5o8OFSemEz4SyLPRzjKteyxNdXQ4dnM/Vh5SQli8pQtAasnWUhExWv5fEN5IxoQmQQBGuJXuXkKHwDdfbmJV56fYqV9ci2ssGCA0H9ETm72I+530W4qpzssRmty2H70prt7/MkCUnRFQkuWHMgcMhehwlw7B0DpuxTu6yPWDX06sRgWE03cuZRaktbesh0xexHCACCv7ws0F8lmnWa2/fT/DPbuYAqz6/auhM5hIGAoDf4PjyKTFcQjCrqkQqzAh2rDp0EzbdPS6XcaKByAY54lbChjJXNEInoS0egpr+k6pEYnSbE3hw3rLrHc4l/x1xQgxHFB40yR2r8iYB5YohCtWIHf7vDWl4sYjn1EYEEpF4QecC9ZW0z3Q9rowa9Oem2TCVymoADscWJYqqjt4ks5WSQns3pdd9JvmUr+B8SvcmLHY31f3jFAYmtYoOROwyoxpl4OmI9Y+d0OZff6T5Ygqx4F/lwzvi9gaVrcHxy9+p5ygGZeqUTiujTCE2easL7Yr2FRtkdidAqPblezZVO2SKkeyd95DMiYyJSJZkQSNW6GAkC4jx3UrWJ+ge/qbpe92ov0URjSykhLRpv1hCxBK4/74Xgk7ATT/J3HPEthMHD7Q+DeTJROChn8aPRlj2LBrZuHv+HKjEUgJKpMk7LjVPLaf6j5ZnvUb2n9vrT+IUDASggE9VISSlZgEv1m3/8hytB9j2xiOxuP9u9p/bwhfgC+hJGV/iyKzhGUvHsrL/4n9AP8L62vvunqxwaUAAAAASUVORK5CYII=" width="18" height="18" alt="" />
+			<h2 class="name">supa-shop</h2>
+			<p class="desc">E-commerce build on Supabase and TanStack Router.</p>
 		</div>
+		<p class="meta">Supabase, TanStack</p>
 	</div>
 </main>
 

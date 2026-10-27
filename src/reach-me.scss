@@ -1,11 +1,25 @@
 @use "../preflight/_preflight";
-// :root {
-// 	--color-1: hsl(21, 90%, 30%);
-// 	--color-2: hsl(24, 91%, 20%);
-// 	--color-3: hsl(24, 91%, 10%);
-// 	--color-text: hsl(29, 100%, 70%);
-// }
 
-.projects {
-	--anim-index: 6;
+/* band two: oat stock; the divider above draws the top rule, this draws
+   the bottom — one hairline each, never a doubled seam */
+.main {
+	padding: var(--space-md) var(--space-xl) var(--space-sm);
+	background: var(--color-paper);
+	border-bottom: var(--rule-hair) solid var(--color-rule-2);
+}
+
+.band {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-md);
+	flex-wrap: wrap;
+}
+
+.band-head {
+	font-size: 36px;
+}
+
+.band-meta {
+	order: 1;
+	color: var(--color-muted);
 }

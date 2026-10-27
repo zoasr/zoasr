@@ -1,0 +1,21 @@
+@use "../preflight/_preflight";
+
+/* a drawn hairline, full bleed, with one short blue guide mark */
+main {
+	background: var(--color-paper);
+	padding: 15px 0;
+	place-items: center;
+}
+
+.rule {
+	position: relative;
+}
+
+.rule::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: calc(var(--rule-hair) * -1);
+	width: 56px;
+	border-top: var(--rule-hair) solid var(--color-accent);
+}

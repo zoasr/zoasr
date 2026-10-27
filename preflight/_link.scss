@@ -1,0 +1,145 @@
+/* Hallmark · v2.0.0 · theme: custom · Top nav link rows with infinite micro-animations
+Hallmark pre-emit critique: P5 H5 E5 S5 R5 V5 · balanced: accessible, visible by default, GPU-composited
+Hallmark · waive 1 · 27 names the infinite micro-loops, reduced-motion disables all */
+
+.link-page {
+	justify-content: center;
+}
+
+.link-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: var(--space-2xs) 0;
+	background: transparent;
+	font-size: var(--text-body);
+	line-height: 1;
+	color: var(--color-ink);
+	text-decoration: none;
+}
+
+.link-left {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-xs);
+	min-width: 0;
+}
+
+.link-icon-svg {
+	flex-shrink: 0;
+	color: var(--color-accent);
+	animation: icon-drift 3.6s ease-in-out infinite alternate;
+}
+
+.link-name {
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--color-ink);
+	letter-spacing: -0.01em;
+}
+
+.link-target {
+	font-size: var(--text-meta);
+	color: var(--color-muted);
+	font-variant-numeric: tabular-nums;
+}
+
+.link-right {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-xs);
+	flex-shrink: 0;
+}
+
+.link-status {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--color-accent);
+	animation: status-pulse 2.4s ease-in-out infinite;
+}
+
+.link-arrow {
+	color: var(--color-accent);
+	animation: arrow-nudge 2s var(--ease-out) infinite alternate;
+}
+
+/* Staggered cycle across the 3 links for organic visual harmony */
+.link-item--website .link-arrow {
+	animation-delay: 0s;
+}
+.link-item--website .link-status {
+	animation-delay: 0s;
+}
+.link-item--website .link-icon-svg {
+	animation-delay: 0s;
+}
+
+.link-item--github .link-arrow {
+	animation-delay: 0.65s;
+}
+.link-item--github .link-status {
+	animation-delay: 0.65s;
+}
+.link-item--github .link-icon-svg {
+	animation-delay: 0.65s;
+}
+
+.link-item--linkedin .link-arrow {
+	animation-delay: 1.3s;
+}
+.link-item--linkedin .link-status {
+	animation-delay: 1.3s;
+}
+.link-item--linkedin .link-icon-svg {
+	animation-delay: 1.3s;
+}
+
+@keyframes arrow-nudge {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0.75;
+	}
+	100% {
+		transform: translate(2.5px, -2.5px);
+		opacity: 1;
+	}
+}
+
+@keyframes status-pulse {
+	0%, 100% {
+		transform: scale(0.85);
+		opacity: 0.45;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+}
+
+@keyframes icon-drift {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-1.5px);
+	}
+}
+
+@media (max-width: 540px) {
+	.link-target {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.link-arrow,
+	.link-status,
+	.link-icon-svg {
+		animation: none !important;
+		transform: none !important;
+		opacity: 1 !important;
+	}
+}

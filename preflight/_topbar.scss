@@ -1,0 +1,37 @@
+/* the file bar: path left, count centre, filename right */
+.topbar-page {
+	justify-content: center;
+}
+
+.topbar {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: baseline;
+	gap: var(--space-sm);
+	font-size: var(--text-meta);
+	color: var(--color-muted);
+	white-space: nowrap;
+}
+
+.topbar b {
+	color: var(--color-ink);
+}
+
+.count {
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+
+.file {
+	text-align: right;
+}
+
+@media (max-width: 520px) {
+	.topbar {
+		grid-template-columns: 1fr auto;
+	}
+
+	.file {
+		display: none;
+	}
+}

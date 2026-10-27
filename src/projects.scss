@@ -1,12 +1,23 @@
 @use "../preflight/_preflight";
 
-// :root {
-// 	--color-1: #002208;
-// 	--color-2: #004810;
-// 	--color-3: #006e25;
-// 	--color-text: #00ff40;
-// }
+/* band one: the one ink band — oat type on warm ink, the sheet's loudest strip */
+.main {
+	background: var(--color-ink);
+	color: var(--color-paper);
+}
 
-.projects {
-	--anim-index: 4;
+.band {
+	display: flex;
+	align-items: baseline;
+	gap: var(--space-md);
+	flex-wrap: wrap;
+}
+
+.band-head {
+	font-size: 36px;
+}
+
+.band-meta {
+	order: 1;
+	color: var(--color-paper-3);
 }

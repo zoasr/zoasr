@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="40px">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
+			<style>
+			
+				/* Hallmark · v2.0.0 · Ember file view · dark: warm oat ink on GitHub charcoal, ember signal · the contribution grid carries the colour */
+				:root {
+					--color-ink: oklch(94.3% 0.014 53.3);
+					--color-ink-2: oklch(84.3% 0.022 51.5);
+					--color-muted: oklch(64.7% 0.022 53.1);
+					--color-accent: oklch(75.3% 0.155 41.6);
+					--color-focus: oklch(75.3% 0.155 41.6);
+					--color-dot-0: oklch(20.6% 0.011 48.1);
+					--color-dot-1: oklch(28.8% 0.046 42.8);
+					--color-dot-2: oklch(38.8% 0.096 39.8);
+					--color-dot-3: oklch(56.5% 0.164 39.2);
+					--color-dot-4: oklch(72.7% 0.176 41.2);
+					--font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+					--text-meta: 12px;
+					--text-body: 14px;
+					--text-name: 18px;
+					--text-intro: 22px;
+					--space-2xs: 4px;
+					--space-xs: 8px;
+					--space-sm: 12px;
+					--space-md: 16px;
+					--space-lg: 28px;
+					--space-xl: 56px;
+					--radius-dot: 2px;
+					--dur-settle: 700ms;
+					--dur-column: 900ms;
+					--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+					--stagger-settle: 90ms;
+					--stagger-column: 18ms;
+				}
+
+							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:var(--font-body)}html,body{overflow-x:clip}main{position:relative;width:100%;height:100%;color:var(--color-ink);background:transparent;overflow:clip}.page{display:flex;flex-direction:column;width:100%;height:100%;padding:0 var(--space-lg)}p{font-size:var(--text-body);line-height:1.5}b{font-weight:600}a{color:var(--color-accent);text-decoration:none}a:focus-visible,:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}::selection{background:var(--color-accent);color:var(--color-ink)}.settle{animation:settle var(--dur-settle) var(--ease-out) both;animation-delay:var(--delay, 0ms)}@keyframes settle{from{opacity:0;transform:translateY(6px)}}@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}.section-page{justify-content:flex-end;padding-bottom:12px}.section{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-sm);font-size:var(--text-meta);color:var(--color-muted)}.section b{color:var(--color-ink)}
+			</style>
+			<main class="page section-page">
+	<div class="section">
+		<p><b>Selected work</b></p>
+		<p>six projects</p>
+	</div>
+</main>
+
+		</div>
+	</foreignObject>
+</svg>

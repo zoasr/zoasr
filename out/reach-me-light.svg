@@ -3,22 +3,53 @@
 		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
 			<style>
 			
+				/* Hallmark · v2.0.0 · Ember file view · light: warm ink on GitHub paper, burnt-orange signal · the contribution grid carries the colour */
 				:root {
-					--color-1: #9fa3ec;
-					--color-2: #9fa3ec;
-					--color-3: #9fa3ec;
-					--color-text: #000222;
+					--color-ink: oklch(23.5% 0.015 48.1);
+					--color-ink-2: oklch(36.9% 0.023 48.1);
+					--color-muted: oklch(48.4% 0.025 51.2);
+					--color-accent: oklch(51.8% 0.163 36.9);
+					--color-focus: oklch(51.8% 0.163 36.9);
+					--color-dot-0: oklch(94% 0.009 62.6);
+					--color-dot-1: oklch(88.8% 0.048 51.6);
+					--color-dot-2: oklch(77.1% 0.103 52.4);
+					--color-dot-3: oklch(63.5% 0.154 45.9);
+					--color-dot-4: oklch(51.8% 0.163 36.9);
+					--font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+					--text-meta: 12px;
+					--text-body: 14px;
+					--text-name: 18px;
+					--text-intro: 22px;
+					--space-2xs: 4px;
+					--space-xs: 8px;
+					--space-sm: 12px;
+					--space-md: 16px;
+					--space-lg: 28px;
+					--space-xl: 56px;
+					--radius-dot: 2px;
+					--dur-settle: 700ms;
+					--dur-column: 900ms;
+					--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+					--stagger-settle: 90ms;
+					--stagger-column: 18ms;
 				}
 
-							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"}ul,li{list-style-type:none}main svg#Layer_2{position:absolute;inset:50% 10% auto 10%;top:50%;translate:0 -50%;z-index:0;opacity:.2;scale:0;animation:scale 1s ease-in-out forwards;animation-delay:2s}@keyframes scale{0%{scale:0}100%{scale:1}}main{padding:1rem;text-align:center;width:100%;height:100%;border-radius:5px;color:var(--color-text);display:grid;place-items:center;gap:2rem;color:var(--color-text)}.cls-1{fill:var(--color-text)}.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;stroke:var(--color-text);animation:pulsate-stroke 5s ease-in-out infinite alternate}@keyframes pulsate-stroke{0%{stroke-width:10px}100%{stroke-width:40px}}.links{display:flex;justify-content:center;gap:1rem}.links .link{display:flex;align-items:center}.links .link a{text-decoration:underline;font-weight:bold;color:var(--color-text)}.links .link .link-logo svg{display:block;fill:var(--color-text)}.links .link-icon{color:var(--color-text);animation:rotate .5s ease-in-out infinite alternate}@keyframes rotate{0%{translate:0 0}100%{translate:10% -10%}}main>*{--anim-index:0;--anim-stagger:.4s;animation-name:reveal;animation-duration:1s;animation-timing-function:cubic-bezier(.23, 1, .32, 1);animation-fill-mode:forwards;animation-delay:calc(var(--anim-stagger, 1s) * var(--anim-index, 0));opacity:0;transform:translateY(-20px);perspective:20px;transform-style:preserve-3d;backface-visibility:hidden;transform-origin:0 0 -100px}@keyframes reveal{0%{opacity:0;transform:rotateY(45deg)}100%{opacity:1;transform:rotateY(0)}}.projects{--anim-index:6}
+							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:var(--font-body)}html,body{overflow-x:clip}main{position:relative;width:100%;height:100%;color:var(--color-ink);background:transparent;overflow:clip}.page{display:flex;flex-direction:column;width:100%;height:100%;padding:0 var(--space-lg);container-type:inline-size}p{font-size:var(--text-body);line-height:1.5}b{font-weight:600}a{color:var(--color-accent);text-decoration:none}a:focus-visible,:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}::selection{background:var(--color-accent);color:var(--color-ink)}.settle{animation:settle var(--dur-settle) var(--ease-out) both;animation-delay:var(--delay, 0ms)}@keyframes settle{from{opacity:0;transform:translateY(6px)}}@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}.main{padding:var(--space-md) var(--space-xl) var(--space-sm);background:var(--color-paper);border-bottom:var(--rule-hair) solid var(--color-rule-2)}.band{display:flex;align-items:baseline;gap:var(--space-md);flex-wrap:wrap}.band-head{font-size:36px}.band-meta{order:1;color:var(--color-muted)}
 			</style>
 			<main class="main">
-	<!-- <div class="transition-box"></div> -->
-	<!-- Projects section -->
-	<div class="projects">
-		<h2>Reach Me</h2>
+	<div class="band">
+		<h2 class="band-head">Say hello</h2>
+		<small class="band-meta">the counter is open</small>
 	</div>
 </main>
+
+
+
+<!-- rebuild -->
+
+<!-- rebuild -->
+
+<!-- rebuild v2 -->
 
 		</div>
 	</foreignObject>

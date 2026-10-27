@@ -1,0 +1,18 @@
+/* a section label set like the file bar: name left, count right */
+.section-page {
+	justify-content: flex-end;
+	padding-bottom: 12px;
+}
+
+.section {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-sm);
+	font-size: var(--text-meta);
+	color: var(--color-muted);
+}
+
+.section b {
+	color: var(--color-ink);
+}

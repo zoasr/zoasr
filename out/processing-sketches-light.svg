@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="60px">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%">
+			<style>
+			
+				/* Hallmark · v2.0.0 · Ember file view · light: warm ink on GitHub paper, burnt-orange signal · the contribution grid carries the colour */
+				:root {
+					--color-ink: oklch(23.5% 0.015 48.1);
+					--color-ink-2: oklch(36.9% 0.023 48.1);
+					--color-muted: oklch(48.4% 0.025 51.2);
+					--color-accent: oklch(51.8% 0.163 36.9);
+					--color-focus: oklch(51.8% 0.163 36.9);
+					--color-dot-0: oklch(94% 0.009 62.6);
+					--color-dot-1: oklch(88.8% 0.048 51.6);
+					--color-dot-2: oklch(77.1% 0.103 52.4);
+					--color-dot-3: oklch(63.5% 0.154 45.9);
+					--color-dot-4: oklch(51.8% 0.163 36.9);
+					--font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+					--text-meta: 12px;
+					--text-body: 14px;
+					--text-name: 18px;
+					--text-intro: 22px;
+					--space-2xs: 4px;
+					--space-xs: 8px;
+					--space-sm: 12px;
+					--space-md: 16px;
+					--space-lg: 28px;
+					--space-xl: 56px;
+					--radius-dot: 2px;
+					--dur-settle: 700ms;
+					--dur-column: 900ms;
+					--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+					--stagger-settle: 90ms;
+					--stagger-column: 18ms;
+				}
+
+							*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root,*,*::before,*::after{font-family:var(--font-body)}html,body{overflow-x:clip}main{position:relative;width:100%;height:100%;color:var(--color-ink);background:transparent;overflow:clip}.page{display:flex;flex-direction:column;width:100%;height:100%;padding:0 var(--space-lg)}p{font-size:var(--text-body);line-height:1.5}b{font-weight:600}a{color:var(--color-accent);text-decoration:none}a:focus-visible,:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}::selection{background:var(--color-accent);color:var(--color-ink)}.settle{animation:settle var(--dur-settle) var(--ease-out) both;animation-delay:var(--delay, 0ms)}@keyframes settle{from{opacity:0;transform:translateY(6px)}}@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}.row-page{justify-content:center}.row{display:grid;grid-template-columns:40px minmax(0, 1fr) auto;align-items:center;gap:var(--space-md);width:100%}.idx{font-size:var(--text-meta);line-height:1;color:var(--color-muted);font-variant-numeric:tabular-nums}.row--lead .idx{color:var(--color-accent);animation:breathe 6s ease-in-out 1.4s infinite}.body{display:flex;align-items:baseline;gap:var(--space-sm);min-width:0}.name{font-size:var(--text-name);font-weight:600;line-height:1.1;letter-spacing:-.01em;color:var(--color-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mark{flex:none;align-self:center;width:18px;height:18px;border-radius:4px;object-fit:contain}.row--compact .mark{width:16px;height:16px;border-radius:3px}.desc{font-size:var(--text-body);line-height:1.4;color:var(--color-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.meta{font-size:var(--text-meta);line-height:1.2;color:var(--color-muted);white-space:nowrap;font-variant-numeric:tabular-nums}.meta b{color:var(--color-accent)}.row--compact{grid-template-columns:minmax(0, 1fr) auto}.row--compact .name{font-size:var(--text-body)}.row--compact .desc{font-size:var(--text-meta)}.row--compact .meta{font-size:11px}@keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}@media (max-width: 640px){.row{grid-template-columns:28px minmax(0, 1fr) auto;gap:var(--space-xs)}.meta{display:none}.name{max-width:100%;font-size:16px;white-space:normal}.desc{max-width:100%;font-size:13px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.row--compact .name{font-size:var(--text-body)}.row--compact .desc{font-size:var(--text-meta);-webkit-line-clamp:1}}
+			</style>
+			<main class="page row-page">
+	<div class="row row--compact">
+		<div class="body">
+			<img class="mark" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTQwMCA1MDBDNzAwIDUwMCA3MDAgMTAwIDQwMCAxMDAiIHN0cm9rZT0iIzA0NjhGRiIgc3Ryb2tlLXdpZHRoPSIxNTAiLz4KICA8cGF0aCBkPSJNNDAwIDIwMEwxMDAgNjAwIiBzdHJva2U9IiMxRjM0QUIiIHN0cm9rZS13aWR0aD0iMTUwIi8+CiAgPHBhdGggZD0iTTEwMCAzMDBMMjAwIDUwMCIgc3Ryb2tlPSIjODVBRUZGIiBzdHJva2Utd2lkdGg9IjE1MCIvPgo8L3N2Zz4K" width="18" height="18" alt="" />
+			<h2 class="name">processing-sketches</h2>
+			<p class="desc">Original Processing sketches.</p>
+		</div>
+		<p class="meta">Processing</p>
+	</div>
+</main>
+
+		</div>
+	</foreignObject>
+</svg>

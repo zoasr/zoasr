@@ -1,0 +1,145 @@
+/* one project line: index, name, one sentence, one fact. No card, no rule,
+   no chip; the space between rows is the separator. */
+.row-page {
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.idx {
+  font-size: var(--text-meta);
+  line-height: 1;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* the open-source row is the one live mark: its index breathes */
+.row--lead .idx {
+  color: var(--color-accent);
+  animation: breathe 6s ease-in-out 1.4s infinite;
+}
+
+.body {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.name {
+  font-size: var(--text-name);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* the project's own favicon, held small beside the name */
+.mark {
+  flex: none;
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.row--compact .mark {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.desc {
+  font-size: var(--text-body);
+  line-height: 1.4;
+  color: var(--color-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.meta {
+  font-size: var(--text-meta);
+  line-height: 1.2;
+  color: var(--color-muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.meta b {
+  color: var(--color-accent);
+}
+
+/* the long tail: smaller type, no index, same air */
+.row--compact {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.row--compact .name {
+  font-size: var(--text-body);
+}
+
+.row--compact .desc {
+  font-size: var(--text-meta);
+}
+
+.row--compact .meta {
+  font-size: 11px;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    gap: var(--space-xs);
+  }
+
+  .meta {
+    display: none;
+  }
+
+  .name {
+    max-width: 100%;
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .desc {
+    max-width: 100%;
+    font-size: 13px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .row--compact .name {
+    font-size: var(--text-body);
+  }
+
+  .row--compact .desc {
+    font-size: var(--text-meta);
+    -webkit-line-clamp: 1;
+  }
+}
